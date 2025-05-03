@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Twitter, Mail } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ProjectCard from "@/components/project-card"
@@ -74,12 +74,12 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button asChild>
-                  <Link href="/projects">
+                  <Link href="#projects">
                     Xem dự án <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link href="/contact">Liên hệ</Link>
+                  <Link href="#contact">Liên hệ</Link>
                 </Button>
               </div>
               <div className="flex gap-4">
@@ -113,27 +113,6 @@ export default function Home() {
                   priority
                 />
               </div>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg border bg-card p-6 shadow-sm">
-              <h3 className="text-xl font-bold">Blockchain Customization</h3>
-              <p className="mt-2 text-muted-foreground">
-                Chuyên xây dựng và tùy chỉnh các blockchain theo yêu cầu cụ thể của khách hàng.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6 shadow-sm">
-              <h3 className="text-xl font-bold">Smart Contract Development</h3>
-              <p className="mt-2 text-muted-foreground">
-                Phát triển hợp đồng thông minh an toàn và hiệu quả trên nhiều nền tảng blockchain.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6 shadow-sm">
-              <h3 className="text-xl font-bold">DeFi & NFT Solutions</h3>
-              <p className="mt-2 text-muted-foreground">
-                Xây dựng các giải pháp DeFi và NFT với hiệu suất cao và bảo mật tối ưu.
-              </p>
             </div>
           </div>
         </section>
